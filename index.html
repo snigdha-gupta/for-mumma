@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f1e8" />
+  <title>For Mumma, with love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <div class="top-note"><span class="tiny-star">✳</span> A LITTLE SOMETHING, JUST FOR YOU <span class="tiny-star">✳</span></div>
+
+    <section class="scene scene-active" id="scene-envelope" aria-labelledby="intro-title">
+      <div class="eyebrow">MADE WITH ALL OUR LOVE</div>
+      <h1 id="intro-title">For our<br><em>favorite person.</em></h1>
+      <p class="intro-copy">Mumma, there's a little surprise<br class="desktop-break"> waiting for you inside.</p>
+
+      <button class="envelope-button" id="open-envelope" aria-label="Open your card">
+        <span class="envelope-shadow"></span>
+        <span class="letter-peek">
+          <span class="peek-heart">♥</span>
+          <span class="peek-text">to Mumma</span>
+        </span>
+        <span class="envelope-back"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
+        <span class="seal">♥</span>
+      </button>
+      <p class="tap-hint"><span class="pulse-dot"></span> Tap the envelope to open</p>
+    </section>
+
+    <section class="scene letter-scene" id="scene-letter" aria-labelledby="letter-title" hidden>
+      <div class="paper">
+        <div class="paper-flower" aria-hidden="true">✳</div>
+        <div class="eyebrow">A NOTE FOR YOU</div>
+        <h2 id="letter-title">Dear Mumma,</h2>
+        <div class="letter-body">
+          <p>We wanted to give you something to make your everyday a little more special.</p>
+          <p>For all the times you're getting things done, taking a little break, going for a drive, or just wanting a moment for yourself — we hope there's always a song that makes you smile.</p>
+          <p>You do so much for everyone around you. This is a tiny reminder to take a little time for <em>you</em>, too.</p>
+        </div>
+        <p class="signoff">We love you, always.<br><span>— Snigdha, Sakshu, Papa ♡</span></p>
+        <button class="primary-button" id="reveal-gift">There's one more thing… <span>→</span></button>
+      </div>
+      <button class="text-button back-button" data-back="scene-envelope">← Go back</button>
+    </section>
+
+    <section class="scene gift-scene" id="scene-gift" aria-labelledby="gift-title" hidden>
+      <div class="gift-sparkle sparkle-one">✦</div>
+      <div class="gift-sparkle sparkle-two">✳</div>
+      <div class="gift-sparkle sparkle-three">✧</div>
+      <div class="eyebrow">YOUR LITTLE GIFT</div>
+      <div class="spotify-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <circle cx="24" cy="24" r="24" fill="#1DB954"/>
+          <path d="M11 18.2c8.4-2.5 18.7-1.6 26 2.8" fill="none" stroke="#102d1b" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M13.3 24.2c6.9-2 15.8-1.2 21.4 2.2" fill="none" stroke="#102d1b" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M15.4 30c5.5-1.5 12.5-.8 16.8 1.8" fill="none" stroke="#102d1b" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2 id="gift-title">A little more music.<br><em>A little more you-time.</em></h2>
+      <p class="gift-copy">Mumma, we got you <strong>Spotify Premium!</strong></p>
+      <p class="gift-detail">More of the songs you love, fewer interruptions, and a soundtrack for all the little moments that make up your day.</p>
+      <button class="primary-button" id="show-playlist">Listen to your little playlist <span>→</span></button>
+      <button class="text-button back-button" data-back="scene-letter">← Read our note again</button>
+    </section>
+
+    <section class="scene playlist-scene" id="scene-playlist" aria-labelledby="playlist-title" hidden>
+      <h2 id="playlist-title">For Mumma, <em>with love.</em></h2>
+      <p class="playlist-intro">A little collection for slow mornings, long drives, happy dancing, and everything in between.</p>
+
+      <div class="playlist-card">
+        <div class="playlist-art">
+          <span class="art-sun"></span>
+          <span class="art-note">♫</span>
+          <span class="art-caption">FIFTY<br>AND<br>FAB</span>
+        </div>
+      </div>
+      <div class="playlist-meta">
+        <a class="spotify-button" id="playlist-link" href="https://open.spotify.com/playlist/7cwUrZZauU7wHY8S4zVrsH?si=522e430a7a4d4a77" target="_blank" rel="noopener noreferrer">
+          <span class="play-icon">▶</span> Open on Spotify
+        </a>
+      </div>
+
+      <button class="text-button back-button" data-back="scene-gift">← Back to your gift</button>
+      <div class="closing-note">We hope a song finds you exactly when you need it.<br><span>Love you, Mumma. ♡</span></div>
+    </section>
+
+    <footer class="site-footer">MADE FOR MUMMA, WITH LOVE <span>♥</span></footer>
+  </main>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
